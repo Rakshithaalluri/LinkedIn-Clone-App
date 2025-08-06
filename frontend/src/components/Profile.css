@@ -1,0 +1,125 @@
+
+
+.profile-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.profile-card {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.profile-card h2 {
+  margin: 10px 0;
+  font-size: 24px;
+  color: #0a66c2;
+}
+
+.profile-card p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 15px;
+}
+
+.profile-posts {
+  margin-top: 25px;
+}
+
+.profile-posts h3 {
+  font-size: 18px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.profile-post {
+  background-color: #f4f4f4;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.profile-post:last-child {
+  margin-bottom: 0;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.dark-mode .profile-container {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .profile-card {
+  border-bottom: 1px solid #444;
+}
+
+.dark-mode .profile-posts h3 {
+  color: #ddd;
+  border-color: #444;
+}
+
+.dark-mode .profile-post {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  box-shadow: none;
+}
+
+.profile-avatar {
+  margin: 0 auto 10px;
+  width: 60px;
+  height: 60px;
+  background-color: #0a66c2;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+
+
+.post-time {
+  display: block;
+  text-align: right;
+  font-size: 12px;
+  color: #777;
+  margin-top: 5px;
+}
+
+
+
+
+
+
+.edit-profile-btn {
+  margin-top: 12px;
+  padding: 8px 14px;
+  font-size: 14px;
+  background-color: #0073b1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.edit-profile-btn:hover {
+  background-color: #005580;
+}
+
