@@ -1,8 +1,7 @@
-const sqlite3 = require('sqlite3').verbose();
-const db = new sqlite3.Database('./users.db');
+const Database = require('better-sqlite3');
+const db = new Database('./users.db');
 
-db.serialize(() => {
-    db.run(`
+db.prepare(`
          CREATE TABLE IF NOT EXISTS users(
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             name TEXT,
@@ -10,17 +9,17 @@ db.serialize(() => {
             bio TEXT,
             password TEXT
          )
-        `);
-});
+        `).run();
 
-db.run(`
+
+db.prepare(`
   CREATE TABLE IF NOT EXISTS posts (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     author TEXT,
     content TEXT,
     time TEXT
   )
-`);
+`).run();
 
 
 module.exports = db;
